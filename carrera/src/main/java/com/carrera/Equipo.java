@@ -35,6 +35,20 @@ public class Equipo {
     public int getTiempoTotalEquipo() {
         return tiempoTotalEquipo;
     }
+     public void setTiempoTotalEquipo(int tiempoTotalEquipo) {
+        Equipo.tiempoTotalEquipo = tiempoTotalEquipo;
+    }
+
+    // Añade un ciclista y suma su tiempo acumulado al tiempo total del equipo. 
+    public void añadirCiclista(Ciclista ciclista) {
+        if (ciclista == null) {
+            throw new IllegalArgumentException("El ciclista no puede ser nulo");
+        }
+    ciclistas.add(ciclista);
+        tiempoTotalEquipo += ciclista.getTiempoAcumulado();
     
+    }
+
+
 }
 
