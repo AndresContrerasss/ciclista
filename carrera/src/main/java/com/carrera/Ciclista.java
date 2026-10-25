@@ -39,8 +39,10 @@ public abstract class Ciclista {
         this.tiempoAcumulado = tiempoAcumulado;
     }
 
-    //Método abstracto: cada especialidad devuelve su tipo. 
-    public abstract String imprimirTipo();
+    //Cada especialidad devuelve su tipo. 
+    public String imprimirTipo(){
+        return "Es un " + this.getClass().getSimpleName();
+    }
 
     public void imprimirDatos() {
         System.out.println("Identificador: " + identificador);
