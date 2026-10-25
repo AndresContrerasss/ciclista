@@ -34,4 +34,18 @@ public abstract class Ciclista {
     public int getTiempoAcumulado() {
         return tiempoAcumulado;
     }
+     // sirve para modificar o actualizar el tiempo ejem despues de terminar la etapa
+    public void setTiempoAcumulado(int tiempoAcumulado) {
+        this.tiempoAcumulado = tiempoAcumulado;
+    }
+
+    //Método abstracto: cada especialidad devuelve su tipo. 
+    public abstract String imprimirTipo();
+
+    public void imprimirDatos() {
+        System.out.println("Identificador: " + identificador);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Tiempo acumulado (min): " + tiempoAcumulado);
+        System.out.println("Tipo: " + imprimirTipo());
+    }
 }
