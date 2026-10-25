@@ -48,6 +48,32 @@ public class Equipo {
         tiempoTotalEquipo += ciclista.getTiempoAcumulado();
     
     }
+    
+     public void imprimirDatosEquipo() {
+        System.out.println("Equipo: " + nombreEquipo);
+        System.out.println("País: " + pais);
+        System.out.println("Tiempo total del equipo (min): " + tiempoTotalEquipo);
+        System.out.println("Cantidad de ciclistas: " + ciclistas.size());
+    }
+
+    public void listarNombresCiclistas() {
+        for (Ciclista c : ciclistas) {
+            System.out.println(c.getNombre());
+        }
+    }
+    
+    public void imprimirDatosCiclistaPorId(int id) {
+        for (Ciclista c : ciclistas) {
+            if (c.getIdentificador() == id) {
+                c.imprimirDatos();
+                return;
+            }
+        }
+        System.out.println("No se encontró un ciclista con identificador " + id);
+    }
+    
+
+    
 
 
 }
