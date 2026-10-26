@@ -8,7 +8,7 @@ public class Equipo {
 
     private String nombreEquipo;
     private String pais;
-    private static int tiempoTotalEquipo; // suma de tiempos de sus ciclistas (min)
+    private int tiempoTotalEquipo; // suma de tiempos de sus ciclistas (min)
     private List<Ciclista> ciclistas;
 
      public Equipo(String nombreEquipo, String pais) {
@@ -36,7 +36,7 @@ public class Equipo {
         return tiempoTotalEquipo;
     }
      public void setTiempoTotalEquipo(int tiempoTotalEquipo) {
-        Equipo.tiempoTotalEquipo = tiempoTotalEquipo;
+        this.tiempoTotalEquipo = tiempoTotalEquipo;
     }
 
     // Añade un ciclista y suma su tiempo acumulado al tiempo total del equipo. 
