@@ -1,3 +1,9 @@
+
+#Integrantes Curso 411
+*Andres Contreras
+*Alan Ledesma
+*Francisco Arboleda
+
 # Sistema de Gestión de Carrera Ciclística 🚴‍♂️
 
 Proyecto desarrollado en **Java** bajo un entorno **Maven**, enfocado en la gestión orientada a objetos de una competencia de ciclismo y sus diferentes tipos de corredores (como Velocistas, Contrarrelojistas, Escaladores, entre otros).
